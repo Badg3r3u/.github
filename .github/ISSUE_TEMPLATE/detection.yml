@@ -1,0 +1,21 @@
+name: False positive or miss
+description: ownscan flagged something it should not, or missed something it should have.
+title: "[detection] "
+labels: ["detection"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - False positive (flagged, but it is not a secret/smell)
+        - Miss (should have flagged, did not)
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sample
+      description: A redacted snippet or a FAKE/EXAMPLE stand-in. Never paste a live secret.
+    validations:
+      required: true

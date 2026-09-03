@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ownscan CLI
+    url: https://github.com/Badg3r3u/ownscan
+    about: Local secrets and misconfiguration scanner
+  - name: ownscan GitHub Action
+    url: https://github.com/Badg3r3u/ownscan-action
+    about: Run ownscan in CI
+  - name: ownkit
+    url: https://github.com/Badg3r3u/ownkit
+    about: Defensive toolkit for systems you own

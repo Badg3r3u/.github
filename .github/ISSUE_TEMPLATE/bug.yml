@@ -1,0 +1,30 @@
+name: Tool bug
+description: Something is wrong in ownscan, ownscan-action, or ownkit.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Which repo?
+      options:
+        - ownscan
+        - ownscan-action
+        - ownkit
+        - not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Steps, expected vs actual. Paste command output. Never paste live secrets.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: This report does not contain live credentials or tokens.
+          required: true
